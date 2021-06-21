@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
+    
+    <title>Calculator</title>
+</head>
+<body>
+    <div class="main">
+        <div class="calculator">
+            <div class="calculator-header">
+                <h3>Calculator</h3>
+            </div>
+            <div class="calculator-screen">
+                <input type="text" class="input-screen" id="result">
+            </div>
+            <div class="calculator-body">
+                <div onclick="screenClear()" class="calc-buttons symbol-key">C</div>
+                <div onclick="deleteLastChar()" class="calc-buttons symbol-key"><i class="fa fa-window-close-o" aria-hidden="true"></i></div>
+                <div onclick="appendNumber('%')" class="calc-buttons symbol-key">%</div>
+                <div onclick="appendNumber('/')" class="calc-buttons symbol-key">/</div>
+                <div onclick="appendNumber('7')" class="calc-buttons">7</div>
+                <div onclick="appendNumber('8')" class="calc-buttons">8</div>
+                <div onclick="appendNumber('9')" class="calc-buttons">9</div>
+                <div onclick="appendNumber('*')" class="calc-buttons symbol-key">x</div>
+                <div onclick="appendNumber('4')" class="calc-buttons">4</div>
+                <div onclick="appendNumber('5')" class="calc-buttons">5</div>
+                <div onclick="appendNumber('6')" class="calc-buttons">6</div>
+                <div onclick="appendNumber('-')" class="calc-buttons symbol-key">-</div>
+                <div onclick="appendNumber('1')" class="calc-buttons">1</div>
+                <div onclick="appendNumber('2')" class="calc-buttons">2</div>
+                <div onclick="appendNumber('3')" class="calc-buttons">3</div>
+                <div onclick="appendNumber('+')" class="calc-buttons symbol-key">+</div>
+                <div onclick="appendNumber('0')" class="calc-buttons">0</div>
+                <div onclick="appendNumber('00')" class="calc-buttons">00</div>
+                <div onclick="appendNumber('.')" class="calc-buttons">.</div>
+                <div onclick="equalResult()" class="calc-buttons equal-btn">=</div>
+            </div>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>

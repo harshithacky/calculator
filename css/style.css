@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+body,html{
+    height: 100%;
+    width: 100%;
+}
+
+.main{
+    background-color: #25CCF7;
+    width: 100%;
+    min-height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 0;
+}
+
+.calculator{
+    height: 480px;
+    width: auto;
+    background-color: burlywood;
+    display: grid;
+    grid-template-rows: 8% 25% auto;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 1px 1px 4px 3px rgba(0, 0, 0, 0.1);  
+}
+
+.calculator-header{
+    background-color: #F9F9F9;
+    display: flex;
+    align-items: center;
+    padding: 0 1rem;
+}
+
+
+.calculator-body{
+    background-color: #F9F9F9;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    padding: 1rem;
+    margin: 0 auto;
+    grid-row-gap: 0.9rem;
+    grid-column-gap: 1.6rem;   
+}
+
+.calculator-body div{
+    width: 2.7rem;
+    height: 2.7rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s all;
+    
+}
+
+.calc-buttons:hover{
+    background-color: #dfdfdf;
+}
+
+.symbol-key{
+    background-color: #C6FFC1;
+}
+
+.symbol-key:hover{
+    background-color: #acffa4;
+}
+
+
+.equal-btn{
+    background-color: #a3fc9b;
+}
+
+.equal-btn:hover{
+    background-color: #92ff88;
+}
+
+.input-screen{
+    height: 100%;
+    width: 100%;
+    border: none;
+    background-color: #f3d7d7;
+    font-weight: 900;
+    font-size: 1.2rem;
+    text-align: right;
+    padding: 1rem;
+}
+
+.input-screen:focus{
+    outline: none;
+}
+
