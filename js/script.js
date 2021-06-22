@@ -13,5 +13,11 @@ const deleteLastChar = () => {
 }
 
 const equalResult = () => {
-    result.value = eval(result.value);
+    let val = result.value;
+    if(val.includes('%'))
+    {
+        val = val.replaceAll('%','*');
+        val += '/100';
+    }
+    result.value = eval(val);
 }
