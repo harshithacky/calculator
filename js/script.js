@@ -25,5 +25,12 @@ const equalResult = () => {
         val = val.replaceAll('%','*');
         val += `/${Math.pow(100,count)}`;
     }
+    else if(val=='')
+        return;
     result.value = eval(val);
 }
+
+result.addEventListener('keydown',(e)=>{
+    if(e.keyCode == 13)
+        equalResult();
+})
