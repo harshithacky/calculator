@@ -16,8 +16,14 @@ const equalResult = () => {
     let val = result.value;
     if(val.includes('%'))
     {
+        let count = 0;
+        for(let i=0; i<val.length; i++)
+        {
+            if(val.charAt(i)=='%')
+                count++;
+        }
         val = val.replaceAll('%','*');
-        val += '/100';
+        val += `/${Math.pow(100,count)}`;
     }
     result.value = eval(val);
 }
