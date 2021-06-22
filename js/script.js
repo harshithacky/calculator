@@ -30,7 +30,10 @@ const equalResult = () => {
     result.value = eval(val);
 }
 
-document.onkeypress = (e) =>{
-    if(e.keyCode == 13)
-        equalResult();
+if (document.documentElement.clientWidth > 700) {
+    document.onkeypress = (e) =>{
+        if(e.code == "Enter")
+            equalResult();
+    }
 }
+
