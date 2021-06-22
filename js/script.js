@@ -30,7 +30,7 @@ const equalResult = () => {
     result.value = eval(val);
 }
 
-result.addEventListener('keydown',(e)=>{
+document.onkeypress = (e) =>{
     if(e.keyCode == 13)
         equalResult();
-})
+}
