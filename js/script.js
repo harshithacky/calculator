@@ -28,11 +28,3 @@ const equalResult = () => {
     
     result.value = eval(val);
 }
-
-if (document.documentElement.clientWidth > 700) {
-    document.onkeypress = (e) =>{
-        if(e.code == "Enter")
-            equalResult();
-    }
-}
-
