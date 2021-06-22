@@ -25,8 +25,7 @@ const equalResult = () => {
         val = val.replaceAll('%','*');
         val += `/${Math.pow(100,count)}`;
     }
-    else if(val=='')
-        return;
+    
     result.value = eval(val);
 }
 
