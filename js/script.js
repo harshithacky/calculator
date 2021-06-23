@@ -28,3 +28,8 @@ const equalResult = () => {
     
     result.value = eval(val);
 }
+
+document.onkeypress = (e) =>{
+    if(e.code == "Enter")
+        equalResult();
+}
